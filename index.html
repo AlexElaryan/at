@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- header start -->
+
+    <header>
+        <div class="logo-block">
+            <img src="image/Логотип.svg" alt="logo">
+        </div>
+        <div class="header-right">
+            <div class="header-top">
+                <div class="head-info-item">
+                    <img src="image/clock.png" alt="">
+                    <p>Пн-Пт 08:00–17:30</p>
+                </div>
+                <div class="head-info-item">
+                    <img src="image/tel.png" alt="">
+                    <p>+7 (___) ___-__-__</p>
+                </div>
+                <div class="head-info-item">
+                    <img src="image/cn.png" alt="">
+                    <p>CNY (¥): 10,9808 ₽ <img src="image/Polygon-1.svg" alt=""></p>
+                </div>
+                <div class="head-info-item">
+                    <img src="image/eu.png" alt="">
+                    <p>EUR (€): 92,4138 ₽ <img src="image/Polygon-1.svg" alt=""></p>
+                </div>
+
+                <div class="socials">
+                    <div class="whatsapp">
+                        <img src="image/whatsapp.png" alt="">
+                    </div>
+                    <div class="telegram">
+                        <img src="image/tg.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <nav>
+                    <ul>
+                        <li class="li_select">Каталог</li>
+                        <li><a href>В наличии</a></li>
+                        <li><a href>Лизинг</a></li>
+                        <li class="li_select">Переоборудование</li>
+                        <li><a href>Контакты</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <div class="search">
+                        <img src="image/search.png" alt="">
+                    </div>
+                    <button class="white-btn">
+                        <img src="image/tel.png" alt="">
+                        Позвоните нам
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="head-mob">
+
+            <img src="image/Логотип-2.svg" alt="">
+
+            <svg class="burger-menu-open" width="49" height="42" viewBox="0 0 49 42" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect width="49" height="42" rx="4" fill="white" />
+                <path d="M14 14H35" stroke="#152B63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M14 21H35" stroke="#152B63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M14 28H35" stroke="#152B63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <svg class="burger-menu-close" width="49" height="42" viewBox="0 0 49 42" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect width="49" height="42" rx="4" fill="white" />
+                <path d="M24 21H25" stroke="#152B63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M17.0718 28.4261L31.921 13.5768" stroke="#152B63" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M17.0789 13.5768L31.9281 28.4261" stroke="#152B63" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+
+
+        </div>
+
+        <div class="burger-menu">
+            <nav>
+                <ul>
+                    <li class="li_select">Каталог</li>
+                    <li><a href>В наличии</a></li>
+                    <li><a href>Лизинг</a></li>
+                    <li class="li_select">Переоборудование</li>
+                    <li><a href>Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="red-btn">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="14" height="14" fill="url(#pattern0_413_1489)" />
+                    <defs>
+                        <pattern id="pattern0_413_1489" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_413_1489" transform="scale(0.00195312)" />
+                        </pattern>
+                        <image id="image0_413_1489" width="512" height="512" preserveAspectRatio="none"
+                            xlink:href="data:image/png;base64,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" />
+                    </defs>
+                </svg>
+
+                Позвоните нам
+            </button>
+            <div class="header-top">
+
+                <div class="burger-menu-info-item">
+                    <span>Наш курс валют</span>
+
+                    <div class="head-info-item">
+                        <img src="image/cn.png" alt="">
+                        <p>CNY (¥): 10,9808 ₽ <img src="image/Polygon-1.svg" alt=""></p>
+                    </div>
+                    <div class="head-info-item">
+                        <img src="image/eu.png" alt="">
+                        <p>EUR (€): 92,4138 ₽ <img src="image/Polygon-1.svg" alt=""></p>
+                    </div>
+
+                </div>
+                <div class="burger-menu-info-item">
+                    <span>Время работы</span>
+                    <div class="head-info-item">
+                        <img src="image/clock.png" alt="">
+                        <p>Пн-Пт 08:00–17:30</p>
+                    </div>
+                </div>
+
+                <div class="burger-menu-info-item">
+                    <span>Наш номер телефона</span>
+                    <div class="head-info-item">
+                        <img src="image/tel.png" alt="">
+                        <p>+7 (___) ___-__-__</p>
+                    </div>
+                </div>
+                <div class="burger-menu-info-item">
+                    <span>Наши соц сети</span>
+                    <div class="socials">
+                        <div class="whatsapp">
+                            <img src="image/whatsapp.png" alt="">
+                        </div>
+                        <div class="telegram">
+                            <img src="image/tg.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <div class="body-filter"></div>
+
+    <div class="search-bar">
+        <input class="input-type-1" type="text" placeholder="Поиск...">
+        <img src="image/search.png" alt="">
+    </div>
+
+    <!-- header end -->
+
+    <!-- main start -->
+
+    <main>
+
+        <section class="intro">
+            <div class="swiper intro-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>от 3,8 млн</p>
+                        <h2>
+                            Шторные
+                            полуприцепы
+                            <p>KRONE и SCHMITZ</p>
+                        </h2>
+                        <span>Отличное состояние, пробег до 150000км. от 2021г.</span>
+                        <div class="intro-swiper-slide-buttons">
+                            <button class="blue-btn">Полуприцепы KRONE
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
+                                    fill="none">
+                                    <path
+                                        d="M16 0.5L4.84645 3.48858L13.0114 11.6536L16 0.5ZM1 15.5L1.70711 16.2071L10.3431 7.57107L9.63604 6.86396L8.92893 6.15685L0.292893 14.7929L1 15.5Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                            <button class="dash-btn">Все полуприцепы</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                </div>
+
+                <div class="intro-swiper-pagination swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="partner">
+            <div class="swiper partner-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="image/partner-1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="image/partner-2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="image/partner-3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="image/partner-4.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="image/partner-5.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="image/partner-6.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="image/partner-1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="image/partner-2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="image/partner-3.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="home-products">
+            <p class="title">Наши <span>товары</span></p>
+
+
+            <div class="swiper home-products-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide product">
+                        <div class="product-image">
+                            <img src="image/truck.png" alt="">
+                        </div>
+
+                        <div class="product-bottom">
+                            <div>
+                                <span class="product-substitle">SITRAK</span>
+                                <p class="product-title">Шасси SITRAK (6х6) C7H-U ZZ3406V455ME1, МКПП</p>
+                            </div>
+                            <ul>
+                                <li class="product-txt-gray">ДВС <span>MC13.48-50 (лицензия MAN D26)</span></li>
+                                <li class="product-txt-gray">Мощность ДВС (л.с.) <span>480</span></li>
+                                <li class="product-txt-gray">КПП <span>ZF16S2530TO + NH/4C</span></li>
+                                <li class="product-txt-gray">Колёсная формула <span>ZF16S2530TO</span></li>
+                            </ul>
+                            <span class="product-txt-gray">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10"
+                                    fill="none">
+                                    <path d="M1 5.5L3 8L10.9444 1" stroke="#24D065" stroke-width="2" />
+                                </svg>
+                                В наличии</span>
+                            <div class="product-price">
+                                <div>
+                                    <span class="product-txt-gray">В рублях</span>
+                                    <p>7 514 545.50 ₽</p>
+                                </div>
+                                <div>
+                                    <span class="product-txt-gray">В юанях</span>
+                                    <p>¥ 693 000</p>
+                                </div>
+                            </div>
+                            <button class="blue-btn">Подробнее <svg width="17" height="17" viewBox="0 0 17 17"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.5 0.5L5.34645 3.48858L13.5114 11.6536L16.5 0.5ZM1.5 15.5L2.20711 16.2071L10.8431 7.57107L10.136 6.86396L9.42893 6.15685L0.792893 14.7929L1.5 15.5Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide product">
+                        <div class="product-image">
+                            <img src="image/truck.png" alt="">
+                        </div>
+
+                        <div class="product-bottom">
+                            <div>
+                                <span class="product-substitle">SITRAK</span>
+                                <p class="product-title">Шасси SITRAK (6х6) C7H-U ZZ3406V455ME1, МКПП</p>
+                            </div>
+                            <ul>
+                                <li class="product-txt-gray">ДВС <span>MC13.48-50 (лицензия MAN D26)</span></li>
+                                <li class="product-txt-gray">Мощность ДВС (л.с.) <span>480</span></li>
+                                <li class="product-txt-gray">КПП <span>ZF16S2530TO + NH/4C</span></li>
+                                <li class="product-txt-gray">Колёсная формула <span>ZF16S2530TO</span></li>
+                            </ul>
+                            <span class="product-txt-gray">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10"
+                                    fill="none">
+                                    <path d="M1 5.5L3 8L10.9444 1" stroke="#24D065" stroke-width="2" />
+                                </svg>
+                                В наличии</span>
+                            <div class="product-price">
+                                <div>
+                                    <span class="product-txt-gray">В рублях</span>
+                                    <p>7 514 545.50 ₽</p>
+                                </div>
+                                <div>
+                                    <span class="product-txt-gray">В юанях</span>
+                                    <p>¥ 693 000</p>
+                                </div>
+                            </div>
+                            <button class="blue-btn">Подробнее <svg width="17" height="17" viewBox="0 0 17 17"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.5 0.5L5.34645 3.48858L13.5114 11.6536L16.5 0.5ZM1.5 15.5L2.20711 16.2071L10.8431 7.57107L10.136 6.86396L9.42893 6.15685L0.792893 14.7929L1.5 15.5Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide product">
+                        <div class="product-image">
+                            <img src="image/truck.png" alt="">
+                        </div>
+
+                        <div class="product-bottom">
+                            <div>
+                                <span class="product-substitle">SITRAK</span>
+                                <p class="product-title">Шасси SITRAK (6х6) C7H-U ZZ3406V455ME1, МКПП</p>
+                            </div>
+                            <ul>
+                                <li class="product-txt-gray">ДВС <span>MC13.48-50 (лицензия MAN D26)</span></li>
+                                <li class="product-txt-gray">Мощность ДВС (л.с.) <span>480</span></li>
+                                <li class="product-txt-gray">КПП <span>ZF16S2530TO + NH/4C</span></li>
+                                <li class="product-txt-gray">Колёсная формула <span>ZF16S2530TO</span></li>
+                            </ul>
+                            <span class="product-txt-gray">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10"
+                                    fill="none">
+                                    <path d="M1 5.5L3 8L10.9444 1" stroke="#24D065" stroke-width="2" />
+                                </svg>
+                                В наличии</span>
+                            <div class="product-price">
+                                <div>
+                                    <span class="product-txt-gray">В рублях</span>
+                                    <p>7 514 545.50 ₽</p>
+                                </div>
+                                <div>
+                                    <span class="product-txt-gray">В юанях</span>
+                                    <p>¥ 693 000</p>
+                                </div>
+                            </div>
+                            <button class="blue-btn">Подробнее <svg width="17" height="17" viewBox="0 0 17 17"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.5 0.5L5.34645 3.48858L13.5114 11.6536L16.5 0.5ZM1.5 15.5L2.20711 16.2071L10.8431 7.57107L10.136 6.86396L9.42893 6.15685L0.792893 14.7929L1.5 15.5Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide product">
+                        <div class="product-image">
+                            <img src="image/truck.png" alt="">
+                        </div>
+
+                        <div class="product-bottom">
+                            <div>
+                                <span class="product-substitle">SITRAK</span>
+                                <p class="product-title">Шасси SITRAK (6х6) C7H-U ZZ3406V455ME1, МКПП</p>
+                            </div>
+                            <ul>
+                                <li class="product-txt-gray">ДВС <span>MC13.48-50 (лицензия MAN D26)</span></li>
+                                <li class="product-txt-gray">Мощность ДВС (л.с.) <span>480</span></li>
+                                <li class="product-txt-gray">КПП <span>ZF16S2530TO + NH/4C</span></li>
+                                <li class="product-txt-gray">Колёсная формула <span>ZF16S2530TO</span></li>
+                            </ul>
+                            <span class="product-txt-gray">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10"
+                                    fill="none">
+                                    <path d="M1 5.5L3 8L10.9444 1" stroke="#24D065" stroke-width="2" />
+                                </svg>
+                                В наличии</span>
+                            <div class="product-price">
+                                <div>
+                                    <span class="product-txt-gray">В рублях</span>
+                                    <p>7 514 545.50 ₽</p>
+                                </div>
+                                <div>
+                                    <span class="product-txt-gray">В юанях</span>
+                                    <p>¥ 693 000</p>
+                                </div>
+                            </div>
+                            <button class="blue-btn">Подробнее <svg width="17" height="17" viewBox="0 0 17 17"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.5 0.5L5.34645 3.48858L13.5114 11.6536L16.5 0.5ZM1.5 15.5L2.20711 16.2071L10.8431 7.57107L10.136 6.86396L9.42893 6.15685L0.792893 14.7929L1.5 15.5Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-control">
+                <div class="home-products-swiper-button-prev swiper-button-prev swiper-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
+                        <path
+                            d="M0.859299 7.29289C0.468775 7.68342 0.468775 8.31658 0.859299 8.70711L7.22326 15.0711C7.61378 15.4616 8.24695 15.4616 8.63747 15.0711C9.028 14.6805 9.028 14.0474 8.63747 13.6569L2.98062 8L8.63747 2.34315C9.028 1.95262 9.028 1.31946 8.63747 0.928932C8.24695 0.538408 7.61378 0.538408 7.22326 0.928932L0.859299 7.29289ZM18.4336 9C18.9859 9 19.4336 8.55228 19.4336 8C19.4336 7.44772 18.9859 7 18.4336 7V9ZM1.56641 8V9H18.4336V8V7H1.56641V8Z"
+                            fill="#152B63" />
+                    </svg>
+                </div>
+                <div class="home-products-swiper-pagination swiper-pagination"></div>
+                <div class="home-products-swiper-button-next swiper-button-next swiper-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
+                        <path
+                            d="M1.56641 7C1.01412 7 0.566406 7.44772 0.566406 8C0.566406 8.55228 1.01412 9 1.56641 9V7ZM19.1407 8.70711C19.5312 8.31658 19.5312 7.68342 19.1407 7.29289L12.7767 0.928932C12.3862 0.538408 11.753 0.538408 11.3625 0.928932C10.972 1.31946 10.972 1.95262 11.3625 2.34315L17.0194 8L11.3625 13.6569C10.972 14.0474 10.972 14.6805 11.3625 15.0711C11.753 15.4616 12.3862 15.4616 12.7767 15.0711L19.1407 8.70711ZM1.56641 8V9H18.4336V8V7H1.56641V8Z"
+                            fill="white" />
+                    </svg>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="home-about-section">
+            <div class="home-about">
+                <p class="title">PER ASPERA <span>AD ASTRA</span></p>
+                <span>Компания «АлюрТрак» была основана в 2022 году в Смоленске. Она занимается поставкой полуприцепной
+                    техники и тягачей из Европы. За короткое время своего существования компания успела зарекомендовать
+                    себя
+                    как надёжный партнёр для многих клиентов.</span>
+                <span>«АлюрТрак» сотрудничает с европейскими производителями и поставщиками, что позволяет предлагать
+                    клиентам широкий ассортимент качественной продукции по доступным ценам. Благодаря опыту и
+                    профессионализму сотрудников компании, процесс поставки техники максимально оптимизирован, что
+                    сокращает
+                    сроки доставки и обеспечивает надёжность сделки.</span>
+                <span>Компания активно развивается и расширяет свою географию, открывая новые представительства и склады
+                    в
+                    разных регионах России. «АлюрТрак» стремится стать лидером в своей отрасли, предоставляя клиентам
+                    лучшие
+                    условия сотрудничества и высокое качество обслуживания.</span>
+                <div>
+                    <div class="home-about_item">
+                        <img src="image/ab-1.png" alt="">
+                        <div>
+                            <p>Широкий ассортимент</p>
+                            <span>У нас вы найдете большой выбор техники. Мы всегда стараемся поддерживать разнообразие
+                                качественных товаров на наших складах.</span>
+                        </div>
+                    </div>
+                    <div class="home-about_item">
+                        <img src="image/ab-2.png" alt="">
+                        <div>
+                            <p>Финансирование</p>
+                            <span>Мы предлагаем гибкие условия оплаты для наших клиентов, чтобы они могли легко
+                                приобрести нужную технику без дополнительных затрат. Лизинг, Кредит или
+                                Рассрочка.</span>
+                        </div>
+                    </div>
+                    <div class="home-about_item">
+                        <img src="image/ab-3.png" alt="">
+                        <div>
+                            <p>TRADE-In</p>
+                            <span>Мы предлагаем программу trade-in: обменяйте свою технику на новую или с небольшим
+                                пробегом. Процесс обмена прост и состоит из нескольких шагов.</span>
+                        </div>
+                    </div>
+                    <div class="home-about_item">
+                        <img src="image/ab-4.png" alt="">
+                        <div>
+                            <p>Техника под заказ</p>
+                            <span>Это услуга нашей компании, которая помогает российским покупателям выбрать технику
+                                известных брендов с учётом их пожеланий, оформить заказ и организовать доставку.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-category">
+            <p class="title">Наши <span>категории</span></p>
+            <span class="substitle">Мы предлагаем нашим клиентам полностью готовые к эксплуатации автомобили с доставкой
+                по всей России и по выгодным ценам. Гарантия на нашу продукцию распространена по всей России.</span>
+
+            <div class="home-category_block">
+                <div class="home-category_block-top">
+                    <div class="home-category-item">
+                        <img src="image/category-1.png" alt="">
+                        <p>Сортиментовозы</p>
+                    </div>
+                    <div class="home-category-item">
+                        <img src="image/category-2.png" alt="">
+                        <p>Серийная грузовая техника</p>
+                    </div>
+                </div>
+                <div class="home-category_block-bottom">
+                    <div class="home-category-item">
+                        <img src="image/category-3.png" alt="">
+                        <p>Лесовозы</p>
+                    </div>
+                    <div class="home-category-item">
+                        <img src="image/category-7.png" alt="">
+                        <p>Мультилифты</p>
+                    </div>
+                    <div class="home-category-item">
+                        <img src="image/category-4.png" alt="">
+                        <p>Гидроманипуляторы</p>
+                    </div>
+                    <div class="home-category-item">
+                        <img src="image/category-8.png" alt="">
+                        <p>Бортовые с КМУ/ГМУ</p>
+                    </div>
+                    <div class="home-category-item">
+                        <img src="image/category-5.png" alt="">
+                        <p>Прицепы и полуприцепы</p>
+                    </div>
+                    <div class="home-category-item">
+                        <img src="image/category-9.png" alt="">
+                        <p>Седельные тягачи с КМУ</p>
+                    </div>
+                    <div class="home-category-item">
+                        <img src="image/category-6.png" alt="">
+                        <p>Ломовозы, металловозы</p>
+                    </div>
+                    <div class="home-category-item">
+                        <img src="image/category-10.png" alt="">
+                        <p>Запчасти и комплектующие</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-lizing">
+            <img src="image/lizing-1.png" alt="">
+            <img src="image/lizing-2.png" alt="">
+            <img src="image/lizing-3.png" alt="">
+            <img src="image/lizing-4.png" alt="">
+            <img src="image/lizing-5.png" alt="">
+            <img src="image/lizing-6.png" alt="">
+            <img src="image/lizing-7.png" alt="">
+            <img src="image/lizing-8.png" alt="">
+        </section>
+
+    </main>
+
+    <!-- main end -->
+
+    <!-- footer start -->
+
+    <footer>
+        <div class="footer-top">
+            <div class="logo-block">
+                <img src="image/Логотип.svg" alt="">
+            </div>
+            <div class="footer-top-right">
+                <p>Задать вопрос</p>
+                <form>
+                    <input class="input-type-1" type="text" placeholder="Напишите свой вопрос...">
+                    <input class="input-type-1" type="text" placeholder="Нужен ваш номер телефона">
+                    <button class="red-btn">Отправить вопрос</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-left">
+
+                <div class="footer-left_top">
+                    <div class="footer-left-item">
+                        <img src="image/loc.png" alt="">
+                        <p>Юр.адрес: </p>
+                        <p>СМОЛЕНСК,УЛ.ПАМФИЛОВА, Д. 5,
+                            ОФИС 409, 214018</p>
+                    </div>
+                    <div class="footer-left-item">
+                        <img src="image/tel-wht.png" alt="">
+                        <p>Отдел продаж: </p>
+                        <a href>+79517165313</a>
+                    </div>
+                    <div class="footer-left-item">
+                        <img src="image/mail.png" alt="">
+                        <p>Наш электронный адрес: </p>
+                        <a href>info@alurtruck.ru</a>
+                    </div>
+                </div>
+
+                <div class="socials">
+                    <div class="whatsapp">
+                        <img src="image/whatsapp.png" alt="">
+                    </div>
+                    <div class="telegram">
+                        <img src="image/tg.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom_right">
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32512.648242359228!2d37.588095422762635!3d55.76341268757068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a862e8cb5df%3A0x47800231e1155623!2z0KHQsNC0INC60YPQu9GM0YLRg9GA0Ysg0Lgg0L7RgtC00YvRhdCwINC40LwuINCdLtCtLiDQkdCw0YPQvNCw0L3QsA!5e0!3m2!1sru!2sam!4v1753780709700!5m2!1sru!2sam"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="footer-top-right">
+                    <p>Задать вопрос</p>
+                    <form>
+                        <input class="input-type-1" type="text" placeholder="Напишите свой вопрос...">
+                        <input class="input-type-1" type="text" placeholder="Нужен ваш номер телефона">
+                        <button class="red-btn">Отправить вопрос</button>
+                    </form>
+                </div>
+                <ul>
+                    <li>КАТАЛОГ</li>
+                    <li><a href>Полуприцепы</a></li>
+                    <li><a href>Тягачи</a></li>
+                    <li><a href>Полуприцепы</a></li>
+                    <li><a href>Тягачи</a></li>
+                    <li><a href>Полуприцепы</a></li>
+                    <li><a href>Тягачи</a></li>
+                    <li><a href>Полуприцепы</a></li>
+                    <li><a href>Тягачи</a></li>
+                    <li><a href>Полуприцепы</a></li>
+                    <li><a href>Тягачи</a></li>
+                </ul>
+                <div>
+                    <ul>
+                        <li>ФИНАНСИРОВАНИЕ</li>
+                        <li><a href>ЛИЗИНГ</a></li>
+                        <li><a href>КРЕДИТ</a></li>
+                        <li><a href>РАССРОЧКА</a></li>
+                    </ul>
+                    <ul>
+                        <li>КОНТАКТНЫЕ ДАННЫЕ</li>
+                        <li><a href>Карта предприятия</a></li>
+                        <li><a href>Карта стоянки</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer end -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+    <script>
+        const swiper1 = new Swiper('.intro-swiper', {
+            loop: true,
+            spaceBetween: 30,
+            slidesPerView: 1,
+            pagination: {
+                el: '.intro-swiper-pagination',
+                clickable: true,
+            },
+
+        });
+
+        const swiper2 = new Swiper('.partner-swiper', {
+            loop: true,
+            spaceBetween: 40,
+            slidesPerView: 2,
+            breakpoints: {
+                1660: {
+                    slidesPerView: 5.9,
+                    spaceBetween: 80,
+                },
+            }
+        });
+
+        const swiper3 = new Swiper('.home-products-swiper', {
+            loop: true,
+            spaceBetween: 20,
+            slidesPerView: 1,
+            pagination: {
+                el: '.home-products-swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.home-products-swiper-button-next',
+                prevEl: '.home-products-swiper-button-prev',
+            },
+            breakpoints: {
+                1660: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+            }
+        })
+    </script>
+</body>
+
+</html>
